@@ -17,7 +17,7 @@ def test_successful_login(page: Page):
     page.locator('[data-test="login-button"]').click()
 
     expect(page).to_have_url(
-        "https://www.saucedemo.com/inventory.html"
+        "https://www.saucedemo.com/incorrect.html"
     )
 
     expect(
